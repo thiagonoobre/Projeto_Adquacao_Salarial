@@ -1,0 +1,26 @@
+print('=-'*25)
+print('         PROGRAMA DE DIVISÃO DE SALARIOS')
+print('=-'*25)
+
+print(' - Divisão do salarios para areas importantes')
+essensial = int(input('Digite a Porcentagem do \033[1:33mEssencial(%)\033[0m: '))
+estudo = int(input('Digite a Porcentagem dos \033[1:34mEstudos(%)\033[0m: '))
+aposentadoria = int(input('Digite a Porcentagem da \033[1:35mAposentadoria(%)\033[0m: '))
+metas = int(input('Digite a Porcentagem da \033[1:36mMestas(%)\033[0m: '))
+fazerOQQ = int(input('Digite a Porcentagem para \033[1:31mFazer oque quiser(%)\033[0m: '))
+print('=-'*25)
+salario = float(input('Digite o Valor do seu \033[1:32mSalario\033[0m: R$'))
+print('=-'*25)
+
+Ve = salario * (essensial / 100)
+Ves = salario * (estudo/ 100)
+Va = salario * (aposentadoria / 100)
+Vm = salario * (metas / 100)
+Vf = salario * (fazerOQQ / 100)
+
+print('Valor para gastar de \033[1:33mEssencial\033[0m é \033[1:32mR${:.2f}\033[0m'.format(Ve))
+print('Valor para investir nos \033[1:34mEstudos\033[0m é \033[1:32mR${:.2f}\033[0m'.format(Ves))
+print('Valor para investir na \033[1:35mAposentadoria\033[0m é \033[1:32mR${:.2f}\033[0m'.format(Va))
+print('Valor para investir nas \033[1:36mMestas\033[0m é \033[1:32mR${:.2f}\033[0m'.format(Vm))
+print('Valor para \033[1:31mFazer oque quiser\033[0m é \033[1:32mR${:.2f}\033[0m'.format(Vf))
+
