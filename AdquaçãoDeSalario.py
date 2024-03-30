@@ -13,7 +13,7 @@ salario = float(input('Digite o Valor do seu \033[1:32mSalario\033[0m: R$'))
 print('=-'*25)
 
 Ve = salario * (essensial / 100)
-Ves = salario * (estudo/ 100)
+Ves = salario * (estudo / 100)
 Va = salario * (aposentadoria / 100)
 Vm = salario * (metas / 100)
 Vf = salario * (fazerOQQ / 100)
