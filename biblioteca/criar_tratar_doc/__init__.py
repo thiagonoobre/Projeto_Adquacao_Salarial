@@ -3,7 +3,7 @@ import pandas as pd
 
 def arquivoExiste(nome_pasta, nome_arq):
     try:
-        pd.read_csv(f'{nome_pasta} / {nome_arq}')
+        pd.read_csv(f'{nome_pasta}/{nome_arq}')
     except:
         return False
     else:
@@ -28,3 +28,4 @@ def lerArquivo(nome_arq):
         print('Erro ao ler o arquivo!')
     else:
         print(df)
+

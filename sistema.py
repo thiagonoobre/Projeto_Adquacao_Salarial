@@ -1,9 +1,6 @@
-from libery.criar_tratar_doc import *
+from biblioteca.doc_usuario.Usuarios import *
 
-cat_di_df = 'catalogo_despesas_investimentos.csv'
+Luiz= Usuario('Luiz')
+Luiz.verificar_usuario()
 
-if not arquivoExiste(cat_di_df):
-    criarArquivo(cat_di_df)
-
-lerArquivo(cat_di_df)
 
