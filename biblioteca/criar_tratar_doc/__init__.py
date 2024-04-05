@@ -16,14 +16,14 @@ def criarArquivo(nome_pasta, nome_arq):
         df.to_csv(f'{nome_pasta}/{nome_arq}', index=False, sep=';')
 
     except:
-        print('Houve um erro na criação do aquivo')
+        print(f'Houve um erro na criação do aquivo: {nome_arq}')
     else:
         print(f'Aquivo {nome_arq} criado com sucesso!')
 
 
-def lerArquivo(nome_arq):
+def lerArquivo(nome_pasta, nome_arq):
     try:
-        df = pd.read_csv(nome_arq, sep=';')
+        df = pd.read_csv(f'{nome_pasta}/{nome_arq}', sep=';')
     except:
         print('Erro ao ler o arquivo!')
     else:

@@ -1,12 +1,18 @@
-from biblioteca.doc_usuario import *
+import os
+from .Usuarios import Usuario
+
 
 class Categoria:
 
-    def __init__(self, usuario, nome_categoria, salario, porcet_cat):
-        self.usuario = usuario
+    def __init__(self, nome_categoria, salario, porcet_cat):
+        super.__init_subclass__(Usuario)
+        self.usuario = None
+        self.nome = self.usuario.nome
         self.nome_categoria = nome_categoria
         self.salario = salario
         self.porcent_cat = porcet_cat
 
+
+
     def criar_categoria(self):
-        pass
+        caminho_pasta = self.usuario.criar_pasta_usuarios()
